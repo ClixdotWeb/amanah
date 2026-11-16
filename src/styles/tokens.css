@@ -1,0 +1,46 @@
+/* AMANAH brand tokens.
+   Official palette: Deep Burgundy #39090B · Champagne Gold #FFECB3 · Warm Ivory #FEFAEA · White #FFFFFF.
+   Other values are transparencies or shades of these four, never new hues. */
+:root {
+  --burgundy: #39090b;
+  --burgundy-deep: #2a0608; /* darker shade of burgundy, used for overlays */
+  --burgundy-soft: #5a1a1c; /* lighter shade of burgundy, used in placeholder light */
+  --gold: #ffecb3;
+  --ivory: #fefaea;
+  --ivory-shade: #f6efd6;
+  --white: #ffffff;
+  --err: #8e1b20; /* error text: a lighter shade of the brand burgundy */
+
+  --ink: var(--burgundy);
+  --ink-2: rgba(57, 9, 11, 0.74);
+  --ink-3: rgba(57, 9, 11, 0.56);
+  --line: rgba(57, 9, 11, 0.13);
+  --line-strong: rgba(57, 9, 11, 0.32);
+  --on-deep: var(--ivory);
+  --on-deep-2: rgba(254, 250, 234, 0.76);
+  --gold-line: rgba(255, 236, 179, 0.22);
+
+  /* Display serif and clean sans. Swap these for the fonts named in the logo presentation if they differ. */
+  --ff-display: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --ff-body: 'Jost', 'Helvetica Neue', Arial, sans-serif;
+
+  --fs-h1: clamp(2.75rem, 1.7rem + 3.9vw, 5.25rem);
+  --fs-h2: clamp(2.25rem, 1.55rem + 2.6vw, 3.9rem);
+  --fs-h3: clamp(1.4rem, 1.15rem + 0.8vw, 1.8rem);
+
+  --gutter: clamp(16px, 4vw, 56px);
+  --container: 1360px;
+  --space-section: clamp(4.5rem, 2.8rem + 6vw, 8.5rem);
+  --header-h: 76px;
+
+  --radius: 4px;
+  --radius-card: 10px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --shadow: 0 24px 48px -28px rgba(42, 6, 8, 0.45);
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --header-h: 64px;
+  }
+}
